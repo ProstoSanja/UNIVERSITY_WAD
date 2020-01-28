@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Rango</title>
+    </head>
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            here is the about page. <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <a href="/rango/">Home</a><br />
+            <img src="{% static 'images/mars_guide.jpg' %}"
+                alt="I am no Rango, sorry." />
+            <img src="{{ MEDIA_URL }}pixels.png" alt="Picture of a phone screen under a microscope."/>
+        </div>
+    </body>
+</html>
