@@ -20,4 +20,4 @@ class PageForm(forms.ModelForm):
     class Meta:
         # Provide an association between the ModelForm and a model
         model = Page
-        fields = ('category',)
+        exclude = ('category',)
